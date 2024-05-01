@@ -14,6 +14,7 @@
 .Page {
 	background-color: #003168;
 	
+	
 }
 
 .Logo {
@@ -217,6 +218,16 @@ background: linear-gradient(90deg, rgba(0,49,104,1) 24%, rgba(0,49,104,0.8659838
   font-size: 200%;
   font-family: arial;
   opacity: 1;
-  cursor: pointer;
+  
 }
+
+.image-frame {
+	width: 30%;
+	height: 20%;
+	color:white;
+	background-color: white;
+	margin-left: 2%;
+	margin-top:2%;
+	
+	
 }

@@ -222,29 +222,77 @@ body {
 
 .picture-container{
 	padding-left: 2%;
-	padding-right: 0%;
+	padding-right: 2%;
 	padding-top: 89px;
+	padding-bottom: 2%
 }
 
-.image-frame {
-	width: 46.7%;
-	height: 300px;
+
+.content-frame {
+	width: 100%;
+	height: 600px;
 	color:white;
 	background-color: white;
 	margin-left: 0%;
-	margin-top:2%;
+	margin-top:1%;
 	border-radius: 7px;
 	padding: 2%;
 	display: inline-block;	
 }
-.content-frame {
-	width: 46.7%;
-	height: 300px;
-	color:white;
-	background-color: white;
-	margin-left: 2%;
-	margin-top:2%;
-	border-radius: 7px;
-	padding: 2%;
-	display: inline-block;	
+   .holster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
 }
+.container2 {
+  display: flex;
+  margin: 1em auto;
+  flex: none;
+  overflow: auto;
+	
+}
+
+.container2.y {
+  width: 100%;
+  height: 100%;
+  flex-flow: column nowrap;
+  overflow-x: hidden;
+	overflow-y: visible;
+	
+}
+
+/* scroll-snap */
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+
+
+.container2 > div {
+  text-align: left;
+  scroll-snap-align: center;
+  flex: none;
+	
+}
+
+
+.y.container2 > div {
+  line-height: 256px;
+  font-size: 128px;
+  width: 100%;
+	height: 100%;
+	color: black
+}
+
+/* appearance fixes */
+.y.container2 > div:first-child {
+  line-height: 1.7;
+  font-size: 64px;
+}
+
+.image {
+	border-radius: 15px;
+}
+
